@@ -1,0 +1,100 @@
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+<div class="pros-cons-container">
+        <div class="pros-container">
+            <h4 class="heading">장점</h4>
+
+            <ul class="pros">
+                <li>손이 작은 사람이 사용하기 좋은 크기</li>
+                <li>고급스러운 마감과 소프트 재질로 미끄러짐 방지</li>
+                <li>오래가는 배터리 수명</li>
+            </ul>
+        </div>
+
+        <div class="cons-container">
+            <h4 class="heading">단점</h4>
+
+            <ul class="cons">
+                <li>앞/뒤로 이동하는 버튼이 없음</li>
+            </ul>
+        </div>
+    </div>
+<style>
+    .pros-cons-container {
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        max-width: 700px;
+        margin: 32px auto;
+        box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.4);
+    }
+
+    .pros-cons-container .heading {
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        padding: 16px 24px;
+    }
+
+    .pros-cons-container .pros-container .heading {
+        background: #02c39a;
+    }
+
+    .pros-cons-container .cons-container .heading {
+        background: #e63946;
+    }
+
+    .pros-cons-container .pros-container ul li::before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        padding-right: 16px;
+        color: #02c39a;
+        display: block;
+    }
+
+    .pros-cons-container .cons-container ul li::before {
+        content: "\f00d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        padding-right: 16px;
+        color: #e63946;
+        display: block;
+    }
+
+    .pros-cons-container .pros-container,
+    .pros-cons-container .cons-container {
+        flex: 1;
+    }
+
+    .pros-cons-container .pros {
+        border-right: 1px solid #eee;
+    }
+
+    .pros-cons-container ul {
+        padding: 8px 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .pros-cons-container ul li {
+        padding: 16px 32px;
+        font-size: 16px;
+        line-height: 2;
+        display: flex;
+    }
+
+    @media (max-width: 530px) {
+        .pros-cons-container {
+            flex-direction: column;
+        }
+
+        .pros-cons-container ul li:nth-of-type(2n) {
+            background: #eee;
+        }
+    }
+</style>
